@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+ 		body {background-color: white;}
+		h1  {
+			color: black;
+			font-size:36px;
+			}
+		h2{
+			color: black;
+			font-size:34px;
+		}
+		h3{
+			color: black;
+			font-size: 30px;
+		}
+
+		h4{
+			color: black;
+			font-size: 20px;
+		}
+
+		
+		p    {
+			color: black;
+			line-height: 1.5em;
+			font-size: 26px;
+			text-indent: 25px;
+			 }
+		
+		.center {
+			margin: auto;
+			width: 65%;
+			border: 3px solid #BB181D;
+			padding: 25px;
+			text-align: center;
+		}
+	
+		.header{
+			width: 100%;
+			height: 100%;
+			line-height:5px;
+		}
+		
+		
+		
+	</style>
+
+<title>POU Kit Search </title>
+
+<script type="text/javascript">
+
+
+</script>
+</head>
+
+<body>
+	<div class="header">
+	 	<h1>Shop Directory</h1>
+  		<h2>Tulsa Admin Center</h2>
+  		<h4>POC Jake Hollcroft #678150</h4><br><hr>
+  		
+  		
+  	</div>
+
+
+  		  		
+  	
+
+	 <div class="center">  
+ 		<p>Shop Directory:</p>
+
+
+ 		<form id="form1">
+ 		<p>Enter Shop Number:  <input name="cpn" type="text" size="20"> (click submit, do not press enter) </form>
+ 		<button onclick="outputname()"> Submit</button></p>
+
+ 		<script>
+ 		function outputname(){
+ 			var x,name,a,b,answer,y;
+ 			x=document.getElementById("form1");
+ 			y=x.elements["cpn"].value;
+ 			var supervisor = "supervisor"
+ 		switch(y){
+
+ 					//CRO SHOPS
+
+ 			case "2014":
+ 			case "2607":
+ 				text = "Area: CRO <br>" +
+ 					   "Supervisor(s): Mike Aab<br>" +  
+ 					   "Phone Number: x0576 <br>" +
+ 					   "All Shops: 2607, 2014";
+ 				break;
+
+ 			case "2812":
+ 			case "2818A":
+ 				text = "Area: CRO <br>" +
+ 					   "Supervisor(s): Juan Fernandez <br>" +
+ 					   "Phone Number: x1344 <br>" +
+ 					   "All Shops: 2812, 2818A";
+ 				break;
+
+ 			case "2731":
+ 			case "2343":
+ 			case "2814":
+ 				text = "Area: CRO <br>" +
+ 					   "Supervisor(s): Bill Roberts <br>" +
+ 					   "Phone Number: x4242 <br>" +
+ 					   "All Shops: 2731, 2343, 2814";
+ 				break;
+
+ 			case "2821":
+ 				text = "Area: CRO <br>" +
+ 					   "Supervisor(s): Randy Winsworth <br>" +
+ 					   "Phone Number: x1823 <br>" +
+ 					   "All Shops: 2821";
+ 				break;
+ 			 			
+
+ 				default:
+ 				text = "I could not find that shop number, please verify number, and capitalize any letters.";
+ 		}
+ 			document.getElementById('cpn').innerHTML = text;
+ 		 		}
+ 		</script>
+	
+<p id="cpn"></p>
+
+</body>
+
+</html> 
